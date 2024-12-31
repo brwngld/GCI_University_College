@@ -1,1 +1,1 @@
-from .user import home
+from .user import home, user_register, courses, contact, gallery

@@ -4,16 +4,16 @@
 	<title>education</title>
 	<meta name="viewport" content="width=device-width">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/all.css">
-	<link rel="stylesheet" type="text/css" href="css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
-	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.rateyo.css"/>
-	<link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" />
-	<link rel="stylesheet" type="text/css" href="inner-page-style.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/all.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/jquery.rateyo.css"/>
+	<link rel="stylesheet" type="text/css" href="../../static/css/jquery.mmenu.all.css" />
+	<link rel="stylesheet" type="text/css" href="../../static/inner-page-style.css">
+	<link rel="stylesheet" type="text/css" href="../../static/style.css">
 </head>
 <body>
 	<div id="page" class="site">
@@ -40,7 +40,6 @@
 							</ul>
 						</div>
 						<div class="login-block">
-							<a href="">Login /</a>
 							<a href="">Register</a>
 						</div>
 					</div>
@@ -50,35 +49,18 @@
 			<div class="main-header">
 				<div class="container">
 					<div class="logo-wrap" itemprop="logo">
-						<a href="./index.html"><img src="images/logo.png" alt="Logo Image" class="gci">
+						<a href="{{url_for('home')}}"><img src="../../static/images/logo.png" alt="Logo Image" class="gci">
 							<span class="gci-logo">GCI UNIVERSITY COLLEGE</span></a>
 						<!-- <h1>Education</h1> -->
 					</div>
 					<div class="nav-wrap">
 						<nav class="nav-desktop">
 							<ul class="menu-list">
-								<li><a href="#">Home</a></li>
-								<li class="menu-parent">Courses
-									<ul class="sub-menu">
-										<li><a href="./course-single.html">Single</a></li>
-										<li><a href="./course-listing.html">Listing</a></li>
-										<li class="menu-parent">Child
-											<ul class="sub-menu">
-												<li><a href="./course-listing.html">Grand-child</a></li>
-												<li><a href="./course-single.html">Grand-child</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li class="menu-parent">News
-									<ul class="sub-menu">
-										<li><a href="">Child</a></li>
-										<li><a href="#">Child</a></li>
-									</ul>
-								</li>
-								<li><a href="./about.html">Strategic Plan</a></li>
-								<li><a href="./gallery2.html">Gallery</a></li>
-								<li><a href="./contact.html">Contact</a></li>
+								<li><a href="{{url_for('home')}}">Home</a></li>
+								<li><a href="{{url_for('courses')}}">Courses</a></li>
+								<li><a href="{{url_for('strategic_plan')}}">Strategic Plan</a></li>
+								<li><a href="{{url_for('gallery')}}">Gallery</a></li>
+								<li><a href="{{url_for('contact')}}">Register</a></li>
 							</ul>
 						</nav>
 						<div id="bar">
@@ -94,9 +76,9 @@
 		<!-- Header Close -->
 		<div class="banner">
 			<div class="owl-four owl-carousel">
-				<img src="images/page-banner.jpg" alt="Image of Bannner">
-				<img src="images/page-banner2.jpg" alt="Image of Bannner">
-				<img src="images/page-banner3.jpg" alt="Image of Bannner">
+				<img src="../../static/images/page-banner.jpg" alt="Image of Bannner">
+				<img src="../../static/images/page-banner2.jpg" alt="Image of Bannner">
+				<img src="../../static/images/page-banner3.jpg" alt="Image of Bannner">
 			</div>
 			<div class="container">
 				<h1>Welcome to GCI University College</h1>
@@ -144,63 +126,63 @@
 			</div>
 				<section class="gallery-images-section gallery2" id="cGrid">
 					<div class="gallery-img-wrap grid-item business" data-category="business">
-						<a href="images/gallery-img1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-							<img src="images/gallery-img1.jpg" alt="gallery-images">
+						<a href="../../static/images/gallery-img1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+							<img src="../../static/images/gallery-img1.jpg" alt="gallery-images">
 						</a>
 					</div>
 					<div class="gallery-img-wrap grid-item business" data-category="business">
-						<a href="images/gallery-img2.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-							<img src="images/gallery-img2.jpg" alt="gallery-images">
+						<a href="../../static/images/gallery-img2.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+							<img src="../../static/images/gallery-img2.jpg" alt="gallery-images">
 						</a>
 					</div>
 					<div class="gallery-img-wrap grid-item design" data-category="design">
-						<a href="images/gallery-img3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-							<img src="images/gallery-img3.jpg" alt="gallery-images">
+						<a href="../../static/images/gallery-img3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+							<img src="../../static/images/gallery-img3.jpg" alt="gallery-images">
 						</a>
 					</div>
 					<div class="gallery-img-wrap grid-item design" data-category="design">
-						<a href="images/gallery-img4.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-							<img src="images/gallery-img4.jpg" alt="gallery-images">
+						<a href="../../static/images/gallery-img4.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+							<img src="../../static/images/gallery-img4.jpg" alt="gallery-images">
 						</a>
 					</div>
 					<div class="gallery-img-wrap grid-item development" data-category="development">
-						<a href="images/gallery-img5.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-							<img src="images/gallery-img5.jpg" alt="gallery-images">
+						<a href="../../static/images/gallery-img5.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+							<img src="../../static/images/gallery-img5.jpg" alt="gallery-images">
 						</a>
 					</div>
 					<div class="gallery-img-wrap grid-item design" data-category="design">
-						<a href="images/gallery-img6.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-							<img src="images/gallery-img6.jpg" alt="gallery-images">
+						<a href="../../static/images/gallery-img6.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+							<img src="../../static/images/gallery-img6.jpg" alt="gallery-images">
 						</a>
 					</div>
 					<div class="gallery-img-wrap grid-item seo" data-category="seo">
-						<a href="images/gallery-img7.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-							<img src="images/gallery-img7.jpg" alt="gallery-images">
+						<a href="../../static/images/gallery-img7.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+							<img src="../../static/images/gallery-img7.jpg" alt="gallery-images">
 						</a>
 					</div>
 					<div class="gallery-img-wrap grid-item marketing" data-category="marketing">
-						<a href="images/gallery-img8.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-							<img src="images/gallery-img8.jpg" alt="gallery-images">
+						<a href="../../static/images/gallery-img8.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+							<img src="../../static/images/gallery-img8.jpg" alt="gallery-images">
 						</a>
 					</div>
 					<div class="gallery-img-wrap grid-item seo" data-category="seo">
-						<a href="images/gallery-img9.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-							<img src="images/gallery-img9.jpg" alt="gallery-images">
+						<a href="../../static/images/gallery-img9.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+							<img src="../../static/images/gallery-img9.jpg" alt="gallery-images">
 						</a>
 					</div>
 					<div class="gallery-img-wrap grid-item seo" data-category="seo">
-						<a href="images/gallery-img10.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-							<img src="images/gallery-img10.jpg" alt="gallery-images">
+						<a href="../../static/images/gallery-img10.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+							<img src="../../static/images/gallery-img10.jpg" alt="gallery-images">
 						</a>
 					</div>
 					<div class="gallery-img-wrap grid-item seo" data-category="seo">
-						<a href="images/gallery-img11.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-							<img src="images/gallery-img11.jpg" alt="gallery-images">
+						<a href="../../static/images/gallery-img11.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+							<img src="../../static/images/gallery-img11.jpg" alt="gallery-images">
 						</a>
 					</div>
 					<div class="gallery-img-wrap grid-item seo" data-category="seo">
-						<a href="images/gallery-img12.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-							<img src="images/gallery-img12.jpg" alt="gallery-images">
+						<a href="../../static/images/gallery-img12.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+							<img src="../../static/images/gallery-img12.jpg" alt="gallery-images">
 						</a>
 					</div>
 				</section>
@@ -294,14 +276,14 @@
 			</div>
 		</footer>
 	</div>
-	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="js/lightbox.js"></script>
-	<script type="text/javascript" src="js/all.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.js"></script>
-	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
-	<script type="text/javascript" src="js/jquery.rateyo.js"></script>
-	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-	<script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
-	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="../../static/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../../static/js/lightbox.js"></script>
+	<script type="text/javascript" src="../../static/js/all.js"></script>
+	<script type="text/javascript" src="../../static/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="../../static/js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="../../static/js/jquery.rateyo.js"></script>
+	<script type="text/javascript" src="../../static/js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="../../static/js/jquery.mmenu.all.js"></script>
+	<script type="text/javascript" src="../../static/js/custom.js"></script>
 </body>
 </html>

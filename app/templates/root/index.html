@@ -4,17 +4,17 @@
 	<title>GCI University College</title>
 	<meta name="viewport" content="width=device-width">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/all.css">
-	<link rel="stylesheet" type="text/css" href="css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
-	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.rateyo.css"/>
-	<!-- <link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" /> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/meanmenu.min.css"> -->
-	<link rel="stylesheet" type="text/css" href="inner-page-style.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/all.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/jquery.rateyo.css"/>
+	<!-- <link rel="stylesheet" type="text/css" href="../../static/css/jquery.mmenu.all.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="../../static/css/meanmenu.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="../../static/inner-page-style.css">
+	<link rel="stylesheet" type="text/css" href="../../static/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
 </head>
 
@@ -43,7 +43,6 @@
 							</ul>
 						</div>
 						<div class="login-block">
-							<a href="">Login /</a>
 							<a href="">Register</a>
 						</div>
 					</div>
@@ -53,35 +52,18 @@
 			<div class="main-header">
 				<div class="container">
 					<div class="logo-wrap" itemprop="logo">
-						<a href="./index.html"><img src="images/logo.png" alt="Logo Image" class="gci">
+						<a href="{{url_for('home')}}"><img src="../../static/images/logo.png" alt="Logo Image" class="gci">
 							<span class="gci-logo">GCI UNIVERSITY COLLEGE</span></a>
 						<!-- <h1>Education</h1> -->
 					</div>
 					<div class="nav-wrap">
 						<nav class="nav-desktop">
 							<ul class="menu-list">
-								<li><a href="#">Home</a></li>
-								<li class="menu-parent">Courses
-									<ul class="sub-menu">
-										<li><a href="./course-single.html">Single</a></li>
-										<li><a href="./course-listing.html">Listing</a></li>
-										<li class="menu-parent">Child
-											<ul class="sub-menu">
-												<li><a href="./course-listing.html">Grand-child</a></li>
-												<li><a href="./course-single.html">Grand-child</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li class="menu-parent">News
-									<ul class="sub-menu">
-										<li><a href="">Child</a></li>
-										<li><a href="#">Child</a></li>
-									</ul>
-								</li>
-								<li><a href="./about.html">Strategic Plan</a></li>
-								<li><a href="./gallery2.html">Gallery</a></li>
-								<li><a href="./contact.html">Contact</a></li>
+								<li><a href="{{url_for('home')}}">Home</a></li>
+								<li><a href="{{url_for('courses')}}">Courses</a></li>
+								<li><a href="{{url_for('strategic_plan')}}">Strategic Plan</a></li>
+								<li><a href="{{url_for('gallery')}}">Gallery</a></li>
+								<li><a href="{{url_for('contact')}}">Register</a></li>
 							</ul>
 						</nav>
 						<div id="bar">
@@ -97,14 +79,14 @@
 		<!-- Header Close -->
 		<div class="banner">
 			<div class="owl-four owl-carousel" itemprop="image">
-				<img src="images/page-banner.jpg" alt="Image of Bannner">
-				<img src="images/page-banner2.jpg" alt="Image of Bannner">
-				<img src="images/page-banner3.jpg" alt="Image of Bannner">
+				<img src="../../static/images/page-banner.jpg" alt="Image of Bannner">
+				<img src="../../static/images/page-banner2.jpg" alt="Image of Bannner">
+				<img src="../../static/images/page-banner3.jpg" alt="Image of Bannner">
 			</div>
 			<div class="container" itemprop="description">
 				<h1>Welcome to GCI University College</h1>
 				<h3>Learn with Ease: Expert Guidance from GCI University College Teachers.</h3> <br>
-				<h2>Discover a more effective way to learn with GCI University College. Our team of expert teachers is passionate about helping you succeed, using innovative teaching methods and tailored support to ensure you reach your full potential.</h2>
+				<h2>Discover a more effective way to learn with GCI University College. Our team of expert teachers is passionate about helping you succeed, using innovative teaching methods and tailored support to ensure you reach your full potential. 11fsadfsfsf</h2>
 			</div>
 			 <div id="owl-four-nav" class="owl-nav"></div>
 		</div>
@@ -144,8 +126,8 @@
 				<div class="courses">
 					<div class="owl-one owl-carousel">
 						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
-							<div class="img-wrap" itemprop="image"><img src="images/course-pic.jpg" alt="courses picture"></div>
-								<a href="./course-listing.html" class="learn-desining-banner" itemprop="name">Short Courses >>></a>
+							<div class="img-wrap" itemprop="image"><img src="../../static/images/course-pic.jpg" alt="courses picture"></div>
+								<a href="{{url_for('courses')}}" class="learn-desining-banner" itemprop="name">Short Courses >>></a>
 							<div class="box-body" itemprop="description">
 								<p><strong>General Knowledge in Computing.</strong> <br>Basic Computer training, from personal computers, internet and mailings, 
 									office productivity, hardware basic and storage mediums.</p>
@@ -159,8 +141,8 @@
 						</div>
 
 						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
-							<div class="img-wrap"  itemprop="image"><img src="images/course-pic.jpg" alt="courses picture"></div>
-								<a href="#" class="learn-desining-banner" itemprop="name">Short Courses >>></a>
+							<div class="img-wrap"  itemprop="image"><img src="../../static/images/course-pic.jpg" alt="courses picture"></div>
+								<a href="{{url_for('courses')}}" class="learn-desining-banner" itemprop="name">Short Courses >>></a>
 							<div class="box-body" itemprop="description">
 								<p><strong>Digital Marketing.</strong> <br>Certified skills in social media marketing, mobile marketing, pay-per click,
 								content marketing, affiliate marketing and search engine optimization</p>
@@ -173,8 +155,8 @@
 						</div>
 
 						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
-							<div class="img-wrap"  itemprop="image"><img src="images/course-pic.jpg" alt="courses picture"></div>
-								<a href="#" class="learn-desining-banner" itemprop="name">Professional Courses >>></a>
+							<div class="img-wrap"  itemprop="image"><img src="../../static/images/course-pic.jpg" alt="courses picture"></div>
+								<a href="{{url_for('courses')}}" class="learn-desining-banner" itemprop="name">Professional Courses >>></a>
 							<div class="box-body" itemprop="description">
 								<p><strong>Cyber Security.</strong> <br>Become a cyber security expert in penetration, incident manager and network security officer</p>
 								<section itemprop="time">
@@ -186,8 +168,8 @@
 						</div>
 
 						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
-							<div class="img-wrap"  itemprop="image"><img src="images/course-pic.jpg" alt="courses picture"></div>
-								<a href="#" class="learn-desining-banner" itemprop="name">Professional Courses >>></a>
+							<div class="img-wrap"  itemprop="image"><img src="../../static/images/course-pic.jpg" alt="courses picture"></div>
+								<a href="{{url_for('courses')}}" class="learn-desining-banner" itemprop="name">Professional Courses >>></a>
 							<div class="box-body" itemprop="description">
 								<p><strong>Secretaryship.</strong> <br>It pays a lot to be an admnistrative assistant, touch typist and keeper of secrets.</p>
 								<section itemprop="time">
@@ -295,63 +277,63 @@
 		
 		<section class="gallery-images-section" itemprop="image" itemscope itemtype=" http://schema.org/ImageGallery">
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-					<img src="images/gallery-img1.jpg" alt="gallery-images">
+				<a href="../../static/images/gallery-img1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+					<img src="../../static/images/gallery-img1.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img2.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-					<img src="images/gallery-img2.jpg" alt="gallery-images">
+				<a href="../../static/images/gallery-img2.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+					<img src="../../static/images/gallery-img2.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-					<img src="images/gallery-img3.jpg" alt="gallery-images">
+				<a href="../../static/images/gallery-img3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+					<img src="../../static/images/gallery-img3.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img4.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-					<img src="images/gallery-img4.jpg" alt="gallery-images">
+				<a href="../../static/images/gallery-img4.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+					<img src="../../static/images/gallery-img4.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img5.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-					<img src="images/gallery-img5.jpg" alt="gallery-images">
+				<a href="../../static/images/gallery-img5.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+					<img src="../../static/images/gallery-img5.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img6.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-					<img src="images/gallery-img6.jpg" alt="gallery-images">
+				<a href="../../static/images/gallery-img6.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+					<img src="../../static/images/gallery-img6.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img7.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-					<img src="images/gallery-img7.jpg" alt="gallery-images">
+				<a href="../../static/images/gallery-img7.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+					<img src="../../static/images/gallery-img7.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img8.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-					<img src="images/gallery-img8.jpg" alt="gallery-images">
+				<a href="../../static/images/gallery-img8.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+					<img src="../../static/images/gallery-img8.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img9.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-					<img src="images/gallery-img9.jpg" alt="gallery-images">
+				<a href="../../static/images/gallery-img9.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+					<img src="../../static/images/gallery-img9.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img10.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-					<img src="images/gallery-img10.jpg" alt="gallery-images">
+				<a href="../../static/images/gallery-img10.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+					<img src="../../static/images/gallery-img10.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img11.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-					<img src="images/gallery-img11.jpg" alt="gallery-images">
+				<a href="../../static/images/gallery-img11.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+					<img src="../../static/images/gallery-img11.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img12.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-					<img src="images/gallery-img12.jpg" alt="gallery-images">
+				<a href="../../static/images/gallery-img12.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+					<img src="../../static/images/gallery-img12.jpg" alt="gallery-images">
 				</a>
 			</div>
 		</section>
@@ -465,15 +447,15 @@
 		</nav> -->
 
 	</div>
-	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="js/lightbox.js"></script>
-	<script type="text/javascript" src="js/all.js"></script>
-	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.js"></script>
-	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
-	<script type="text/javascript" src="js/jquery.rateyo.js"></script>
-	<!-- <script type="text/javascript" src="js/jquery.mmenu.all.js"></script> -->
-	<!-- <script type="text/javascript" src="js/jquery.meanmenu.min.js"></script> -->
-	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="../../static/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../../static/js/lightbox.js"></script>
+	<script type="text/javascript" src="../../static/js/all.js"></script>
+	<script type="text/javascript" src="../../static/js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="../../static/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="../../static/js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="../../static/js/jquery.rateyo.js"></script>
+	<!-- <script type="text/javascript" src="../../static/js/jquery.mmenu.all.js"></script> -->
+	<!-- <script type="text/javascript" src="../../static/js/jquery.meanmenu.min.js"></script> -->
+	<script type="text/javascript" src="../../static/js/custom.js"></script>
 </body>
 </html>
