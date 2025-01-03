@@ -19,25 +19,26 @@
 				<div class="container">
 					<div class="top-header-left">
 						<div class="top-header-block">
-							<a href="mailto:info@educationpro.com"><i class="fas fa-envelope"></i> info@educationpro.com</a>
+							<a href="mailto:info@educationpro.com" itemprop="email"><i class="fas fa-envelope"></i> info@gciuniversitycollege.com</a>
 						</div>
 						<div class="top-header-block">
-							<a href="tel:+9779813639131"><i class="fas fa-phone"></i> +977 9813639131</a>
+							<a href="tel:+233 54 776 9457" itemprop="telephone"><i class="fas fa-phone"></i> +233 54 776 9457</a>
+						</div>
+						<div class="top-header-block">
+							<a href="tel: +233 24 881 5243" itemprop="telephone"><i class="fas fa-phone"></i> +233 24 881 5243</a>
 						</div>
 					</div>
 					<div class="top-header-right">
 						<div class="social-block">
 							<ul class="social-list">
-								<li><a href=""><i class="fab fa-viber"></i></a></li>
+								<li><a href="https://wa.link/p7bvdz" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
 								<li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
 								<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
 								<li><a href=""><i class="fab fa-facebook-messenger"></i></a></li>
 								<li><a href=""><i class="fab fa-twitter"></i></a></li>
-								<li><a href=""><i class="fab fa-skype"></i></a></li>
 							</ul>
 						</div>
 						<div class="login-block">
-							<a href="">Login /</a>
 							<a href="">Register</a>
 						</div>
 					</div>
@@ -74,9 +75,9 @@
 		<!-- Header Close -->
 		<div class="banner">
 			<div class="owl-four owl-carousel">
-				<img src="../../static/images/page-banner.jpg" alt="Image of Bannner">
-				<img src="../../static/images/page-banner2.jpg" alt="Image of Bannner">
-				<img src="../../static/images/page-banner3.jpg" alt="Image of Bannner">
+				<img src="../../static/images/page-banner.png" alt="Image of Bannner">
+				<img src="../../static/images/page-banner2.png" alt="Image of Bannner">
+				<img src="../../static/images/page-banner3.png" alt="Image of Bannner">
 			</div>
 			<div class="container">
 				<h1>welcome to education pro</h1>
@@ -144,27 +145,27 @@
 		</section>
 
 		<section class="map-section">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.466399650749!2d-0.012712924097018453!3d5.6454530943358145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf80b2cca16151%3A0xe0988ca7cd1e28a5!2sGolden%20Chopsticks%20Restaurant!5e0!3m2!1sen!2sgh!4v1735462781313!5m2!1sen!2sgh" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d622.324399497195!2d-0.010347215747075235!3d5.645154811236263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf8756cb545da5%3A0x3a97635777690221!2sGentle%20Computer%20Institute%20%7C%20Community%205%20Branch!5e1!3m2!1sen!2sgh!4v1735913094980!5m2!1sen!2sgh" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</section>
 
 		<section class="query-section">
 			<div class="container">
-				<p>Any Queries? Ask us a question at<a href="tel:+9779813639131"><i class="fas fa-phone"></i> +977 9813639131</a></p>
+				<p>Any Queries? Ask us a question at<a href="tel:+233547769457"><i class="fas fa-phone"></i> +233 54 776 9457</a></p>
 			</div>
 		</section>
 		<!-- End of Query Section -->
 		<footer class="page-footer">
 			<div class="footer-first-section">
 				<div class="container">
-					<div class="box-wrap">
+					<div class="box-wrap" itemprop="about">
 						<header>
 							<h1>about</h1>
 						</header>
-						<p>Edugate is a great start for and education. Personnel or oganization to start the online business with 1 click</p>
+						<p>Empower your IT skills with GCI University College. Learn to build a successful online business with our expert-led courses.</p>
 
-						<h4><a href="tel:+9779813639131"><i class="fas fa-phone"></i> +977 9813639131</a></h4>
-						<h4><a href="mailto:info@educationpro.com"><i class="fas fa-envelope"></i> info@educationpro.com</a></h4>
-						<h4><i class="fas fa-map-marker-alt"></i>Gongabu, Kathmandu, Nepal</h4>
+						<h4><a href="tel:+9779813639131"><i class="fas fa-phone"></i> +233 54 776 9457</a></h4>
+						<h4><a href="mailto:info@gciuniversitycollege.com"><i class="fas fa-envelope"></i> info@gciuniversitycollege.com</a></h4>
+						<h4><a href=""><i class="fas fa-map-marker-alt"></i>Tema Community 5, Opp. Tema Christian Eye Centre</a></h4>
 					</div>
 
 					<div class="box-wrap">
@@ -172,33 +173,11 @@
 							<h1>links</h1>
 						</header>
 						<ul>
-							<li><a href="#">Teacher</a></li>
-							<li><a href="#">Courses</a></li>
-							<li><a href="#">Courses</a></li>
-							<li><a href="#">Courses</a></li>
-							<li><a href="#">Courses</a></li>
-							<li><a href="#">Courses</a></li>
+							<li><a href="{{url_for('courses')}}">Courses</a></li>
+							<li><a href="{{url_for('gallery')}}">Gallery</a></li>
+							<li><a href="{{url_for('contact')}}">Contact</a></li>
+							
 						</ul>
-					</div>
-
-					<div class="box-wrap">
-						<header>
-							<h1>recent courses</h1>
-						</header>
-						<div class="recent-course-wrap">
-							<img src="images/ui-ux.jpg" alt="Ui/Ux Designing">
-							<a href=""><div class="course-name">
-								<h3>UI/UX Designer courses</h3>
-								<p><span>$50</span> $40</p>
-							</div></a>
-						</div>
-						<div class="recent-course-wrap">
-							<img src="images/ui-ux.jpg" alt="Ui/Ux Designing">
-							<a href=""><div class="course-name">
-								<h3>UI/UX Designer courses</h3>
-								<p><span>$50</span> $40</p>
-							</div></a>
-						</div>
 					</div>
 
 					<div class="box-wrap">
@@ -230,7 +209,7 @@
 			</div>
 			<div class="footer-last-section">
 				<div class="container">
-					<p>Copyright 2018 &copy; educationpro.com <span> | </span> Theme designed and developed by <a href="https://labtheme.com">Lab Theme</a></p>
+					<p>Copyright 2025 &copy; gciuniversitycollege.com <span></p>
 				</div>
 			</div>
 		</footer>

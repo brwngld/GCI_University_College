@@ -25,10 +25,13 @@
 				<div class="container">
 					<div class="top-header-left">
 						<div class="top-header-block">
-							<a href="mailto:info@educationpro.com" itemprop="email"><i class="fas fa-envelope"></i> info@educationpro.com</a>
+							<a href="mailto:info@educationpro.com" itemprop="email"><i class="fas fa-envelope"></i> info@gciuniversitycollege.com</a>
 						</div>
 						<div class="top-header-block">
 							<a href="tel:+233 54 776 9457" itemprop="telephone"><i class="fas fa-phone"></i> +233 54 776 9457</a>
+						</div>
+						<div class="top-header-block">
+							<a href="tel: +233 24 881 5243" itemprop="telephone"><i class="fas fa-phone"></i> +233 24 881 5243</a>
 						</div>
 					</div>
 					<div class="top-header-right">
@@ -39,7 +42,6 @@
 								<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
 								<li><a href=""><i class="fab fa-facebook-messenger"></i></a></li>
 								<li><a href=""><i class="fab fa-twitter"></i></a></li>
-								<li><a href=""><i class="fab fa-skype"></i></a></li>
 							</ul>
 						</div>
 						<div class="login-block">
@@ -79,14 +81,14 @@
 		<!-- Header Close -->
 		<div class="banner">
 			<div class="owl-four owl-carousel" itemprop="image">
-				<img src="../../static/images/page-banner.jpg" alt="Image of Bannner">
-				<img src="../../static/images/page-banner2.jpg" alt="Image of Bannner">
-				<img src="../../static/images/page-banner3.jpg" alt="Image of Bannner">
+				<img src="../../static/images/page-banner.png" alt="Image of Bannner">
+				<img src="../../static/images/page-banner2.png" alt="Image of Bannner">
+				<img src="../../static/images/page-banner3.png" alt="Image of Bannner">
 			</div>
 			<div class="container" itemprop="description">
-				<h1>Welcome to GCI University College</h1>
-				<h3>Learn with Ease: Expert Guidance from GCI University College Teachers.</h3> <br>
-				<h2>Discover a more effective way to learn with GCI University College. Our team of expert teachers is passionate about helping you succeed, using innovative teaching methods and tailored support to ensure you reach your full potential. 11fsadfsfsf</h2>
+				<h1>Unlock Your Potential</h1>
+				<h3>Learn with Ease, Grow with Expertise</h3> <br>
+				<h2>Experience the best of IT education at GCI University College. Our expert faculty, cutting-edge curriculum, and innovative learning approach will empower you to succeed in the digital world.</h2>
 			</div>
 			 <div id="owl-four-nav" class="owl-nav"></div>
 		</div>
@@ -307,10 +309,13 @@
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="../../static/images/gallery-img7.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-					<img src="../../static/images/gallery-img7.jpg" alt="gallery-images">
-				</a>
+				<video width="320" height="240" controls>
+					<source src="../../static/images/gallery-img7.mp4" type="video/mp4">
+					<img src="../../static/images/video-capture-0.00seg-8992.png" alt="gallery-video" />
+					Your browser does not support the video tag.
+				</video>
 			</div>
+			
 			<div class="gallery-img-wrap">
 				<a href="../../static/images/gallery-img8.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
 					<img src="../../static/images/gallery-img8.jpg" alt="gallery-images">
@@ -344,7 +349,7 @@
 		<!-- Latest News CLosed -->
 		<section class="query-section">
 			<div class="container">
-				<p>Any Queries? Ask us a question at<a href="tel:+9779813639131"><i class="fas fa-phone"></i> +977 9813639131</a></p>
+				<p>Any Queries? Ask us a question at<a href="tel:+233547769457"><i class="fas fa-phone"></i> +233 54 776 9457</a></p>
 			</div>
 		</section>
 		<!-- End of Query Section -->
@@ -355,10 +360,10 @@
 						<header>
 							<h1>about</h1>
 						</header>
-						<p>Edulab is a great start for and education. Personnel or oganization to start the online business with 1 click</p>
+						<p>Empower your IT skills with GCI University College. Learn to build a successful online business with our expert-led courses.</p>
 
 						<h4><a href="tel:+9779813639131"><i class="fas fa-phone"></i> +233 54 776 9457</a></h4>
-						<h4><a href="mailto:info@educationpro.com"><i class="fas fa-envelope"></i> info@educationpro.com</a></h4>
+						<h4><a href="mailto:info@gciuniversitycollege.com"><i class="fas fa-envelope"></i> info@gciuniversitycollege.com</a></h4>
 						<h4><a href=""><i class="fas fa-map-marker-alt"></i>Tema Community 5, Opp. Tema Christian Eye Centre</a></h4>
 					</div>
 
@@ -367,9 +372,9 @@
 							<h1>links</h1>
 						</header>
 						<ul>
-							<li><a href="./course-single.html">Courses</a></li>
-							<li><a href="./gallery2.html">Gallery</a></li>
-							<li><a href="./contact.html">Contact</a></li>
+							<li><a href="{{url_for('courses')}}">Courses</a></li>
+							<li><a href="{{url_for('gallery')}}">Gallery</a></li>
+							<li><a href="{{url_for('contact')}}">Contact</a></li>
 							
 						</ul>
 					</div>
@@ -403,48 +408,10 @@
 			</div>
 			<div class="footer-last-section">
 				<div class="container">
-					<p>Copyright 2025 &copy; gciuniversitycollege.com <span> | </span> Theme designed and developed by <a href="https://labtheme.com">Lab Theme</a></p>
+					<p>Copyright 2025 &copy; gciuniversitycollege.com <span></p>
 				</div>
 			</div>
 		</footer>
-
-		<!-- <nav id="menu">
-			<ul>
-				<li><a href="#">HOME</a></li>
-				<li>
-					<span>COURSES</span>
-					<ul>
-						<li><a href="#/courses/child">Child</a></li>
-						<li><a href="#/courses/child">Child</a></li>
-						<li>
-							<span>Child</span>
-							<ul>
-								<li><a href="#/courses/child/grandChild">Grand Child</a></li>
-								<li><a href="#/courses/child/grandChild">Grand Child</a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">gallery</a>
-					<ul>
-						<li><a href="#">Child</a></li>
-						<li><a href="#">Child</a></li>
-						<li><a href="#">Child</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">news</a>
-					<ul>
-						<li><a href="#">Child</a></li>
-						<li><a href="#">Child</a></li>
-						<li><a href="#">Child</a></li>
-					</ul>
-				</li>
-				<li><a href="#">about</a></li>
-				<li><a href="#">contact</a></li>
-			</ul>
-		</nav> -->
 
 	</div>
 	<script type="text/javascript" src="../../static/js/jquery-3.3.1.min.js"></script>
